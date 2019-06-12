@@ -1,3 +1,7 @@
+/*
+ * Enemy
+ */
+
 class Enemy {
     constructor(x, y, speed) {
         this.sprite = 'images/enemy-bug.png';
@@ -6,6 +10,8 @@ class Enemy {
         this.speed = Math.floor(Math.random() * 400);
     }
 
+    // Update the enemy's position
+    // Parameter: dt, a time delta between ticks
     update(dt) {
         if (this.x <= 550) {
             this.x += this.speed * dt;
@@ -21,11 +27,15 @@ class Enemy {
         }
     }
 
+    // Draw the enemy on the screen
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 }
 
+/*
+ * Player
+ */
 class Player {
     constructor(x, y) {
         this.sprite = 'images/char-boy.png';
