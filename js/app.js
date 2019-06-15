@@ -16,7 +16,7 @@ class Enemy {
         if (this.x <= 550) {
             this.x += this.speed * dt;
         } else {
-            this.x = -1
+            this.x = -1;
         }
 
         if (player.x >= this.x - 50 &&
