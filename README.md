@@ -4,7 +4,7 @@
 
 - [Instructions](#instructions)
 - [Game rules](#gamerules)
-- [Contributing](#Technology)
+- [Technology](#Technology)
 
 ## Instructions
 clone all the files and double click index.html
